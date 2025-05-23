@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cargar iconos de FontAwesome -->
+    <script src="https://kit.fontawesome.com/3140323153.js" crossorigin="anonymous"></script>
+
+    <!-- Cargar CSS personalizado -->
+     <link rel="stylesheet" href="/css/Styles_globalV.0.01.css">
+    <link rel="stylesheet" href="/css/styles_homeV.0.0.1.css">
+
+    <!-- Cargar iconos para la app -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/faviconV01v//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/faviconV01//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/faviconV01//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/faviconV01//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/faviconV01//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/faviconV01//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/faviconV01//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/faviconV01//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/faviconV01//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/faviconV01//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/faviconV01//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/faviconV01//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/faviconV01//favicon-16x16.png">
+
+    <title>Jouya Tour</title>
+</head>
+<header>
+        <nav class="navbar">
+            <div class="nav-content">
+                <a href="/index.html" class="nav-logo">
+                    <img src="/assets/logos/Logo transparentev2.png" alt="logo">
+                </a>
+                <button class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="nav-links">
+                    <a href="#inicio"><i class="fa-solid fa-house"></i>Inicio</a>
+                    <a href="#destinos"><i class="fa-solid fa-earth-americas"></i>Destinos</a>
+                    <a href="#guides-section"><i class="fa-solid fa-dollar-sign"></i>Precios</a>
+                    <a href="#experiencias"><i class="fas fa-star"></i>¿Por qué elegir Jouya tour?</a>
+                    <a href="#contacto"><i class="fa-solid fa-phone"></i>Contáctanos</a>
+                </div>
+            </div>
+        </nav>
+</header>
+
+<main>
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Explora La Guajira con guías locales expertos</h1>
+            <p>Experiencias únicas y personalizadas en los diferentes destinos que tenemos para ti.</p>
+            <div class="search-box">
+                <select class="search-input" id="destinationSelect">
+                    <option value="">Selecciona un destino</option>
+                    <option value="Sierra-Mamey">Tour Sierra Mamey</option>
+                    <option value="Cabo-vela">Tour Cabo de la Vela</option>
+                    <option value="Santuario-de-Flamencos">Tour Santuario de Flamencos</option>
+                    <option value="la-Guajira">Tour por la Guajira</option>
+                    <option value="Tour-Riohacha">City Tour Riohacha</option>
+                    <option value="Tour-Valledupar">City Tour Valledupar</option>
+
+                </select>
+                <button class="search-button" onclick="searchGuides()">
+                <i class="fa-solid fa-magnifying-glass"></i> Buscar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva sección de destinos -->
+    <section class="destinations" id="destinos">
+        <div class="destinations-container">
+            <h2>Destinos Populares</h2>
+            <div class="destinations-grid" id="destinationsGrid">
+                <!-- Se generará dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <section class="guides-section" id="guides-section">
+        <div class="guides-container">
+            <h2>Precios</h2>
+            <div class="guides-grid" id="guidesGrid">
+                <!-- Se generará dinámicamente -->
+            </div>
+        </div>
+        <div class="ver">
+    </div>
+    </section>
+    <section class="features" id="experiencias">
+        <h2>¿Por qué elegir Jouya tour?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Guías Locales</h3>
+                <p>Nuestros guías son habitantes locales apasionados, con profundo conocimiento de la cultura WAYUU, historia y secretos de La Guajira. Te llevarán a vivir una experiencia auténtica y enriquecedora, conectándote con la esencia de este mágico territorio.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Experiencias Únicas</h3>
+                <p>Disfruta de tours diseñados a tu medida, adaptados a tus gustos e intereses. Desde paisajes impresionantes hasta encuentros culturales, cada recorrido será una experiencia inolvidable que despertará tus sentidos y emociones.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Garantía de Calidad</h3>
+                <p>Tu satisfacción es nuestra prioridad. Por eso, garantizamos un servicio de alta calidad, con atención personalizada y experiencias cuidadosamente planeadas para superar tus expectativas.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div>
+            <div class="logofooter">
+                <a href="/index.html"><img src="/assets/logos/logo colorv2.jpg" alt="logo">Jouya tour</a>
+            </div>
+
+            <div class="social">
+                <h3>Siguenos en</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61569644880442" target="_blank"><i class="fa-brands fa-facebook-f"></i> @Jouya Tour</a></li>
+                    <li><a href="https://www.instagram.com/jouya_tour/" target="_blank"><i class="fa-brands fa-instagram"></i> @jouya_tour</a></li>
+                    <li><a href="https://www.tiktok.com/@jouyatour?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i> @jouyatour</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h3>Destinos Populares</h3>
+            <p>Sierra Mamey</p>
+            <p>City Tour Riohacha</p>
+            <p>Cabo de la Vela</p>
+        </div>
+        <div class="contacto"  id="contacto">
+            <h3><i class="fa-solid fa-user"></i>Contacto</h3>
+        <ul>
+            <li><a href="https://wa.link/vznsop" target="_blank"><i class="fa-brands fa-whatsapp"></i> 323-578-6491</a></li>
+            <li><a href="" target="_blank"><i class="fa-solid fa-phone"></i> 323-578-6491</a></li>
+            <li><a><i class="fa-solid fa-envelope"></i> jouyatour@gmail.com</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="credits">
+        <!-- Créditos de desarrollo -->
+        <p class="By"><strong>Developed by</strong> | Arnaldo Pushaina</p>
+        
+        <!-- Derechos reservados -->
+        <p class="text">©2024 | Todos los derechos reservados</p>
+    </div>
+</footer>
+
+<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"bd0e94dad927e2215ad10f7fdedea508"})});
+</script>
+<script src="/javascript/script_homev1.js"></script>
+</body>
+</html>
