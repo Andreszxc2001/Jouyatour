@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cargar iconos de FontAwesome -->
+    <script src="https://kit.fontawesome.com/3140323153.js" crossorigin="anonymous"></script>
+
+    <!-- Cargar CSS personalizado -->
+    <link rel="stylesheet" href="/css/Styles_globalV.0.01.css">
+    <link rel="stylesheet" href="/css/styles_homeV.0.0.1.css">
+
+    <!-- Cargar iconos para la app -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/faviconV01v//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/faviconV01//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/faviconV01//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/faviconV01//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/faviconV01//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/faviconV01//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/faviconV01//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/faviconV01//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/faviconV01//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/faviconV01//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/faviconV01//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/faviconV01//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/faviconV01//favicon-16x16.png">
+
+    <title>Política de Cookies - Jouya Tour</title>
+    
+    <style>
+        .legal-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 6rem 2rem 4rem;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .legal-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        .legal-header h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .legal-header p {
+            color: #6b7280;
+            font-size: 1.1rem;
+        }
+        
+        .legal-content {
+            line-height: 1.8;
+            color: var(--text);
+        }
+        
+        .legal-content h2 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .legal-content h3 {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .legal-content p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        
+        .legal-content ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+        
+        .legal-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            margin: 2rem 0;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: background 0.3s;
+        }
+        
+        .back-link:hover {
+            background: var(--secondary);
+        }
+        
+        .highlight-box {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .highlight-box h4 {
+            color: #92400e;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-type {
+            background: #f0f9ff;
+            border: 1px solid #0ea5e9;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .cookie-type h4 {
+            color: #0369a1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: white;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .cookie-table th,
+        .cookie-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .cookie-table th {
+            background: var(--primary);
+            color: white;
+            font-weight: bold;
+        }
+        
+        .cookie-table tr:nth-child(even) {
+            background: #f9fafb;
+        }
+        
+        .cookie-table tr:hover {
+            background: #f3f4f6;
+        }
+        
+        /* Estilos para el footer mejorado */
+        .credits {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: center;
+            padding: 2rem;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .credits p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        
+        .credits .text {
+            color: #6b7280;
+        }
+        
+        .credits .text a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 0.5rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            transition: all 0.3s ease;
+        }
+        
+        .credits .text a:hover {
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .legal-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .legal-container {
+                padding: 5rem 1rem 2rem;
+                margin: 1rem;
+            }
+            
+            .legal-header h1 {
+                font-size: 2rem;
+            }
+            
+            .legal-content {
+                font-size: 0.95rem;
+            }
+            
+            .cookie-table {
+                font-size: 0.9rem;
+            }
+            
+            .cookie-table th,
+            .cookie-table td {
+                padding: 0.5rem;
+            }
+            
+            .legal-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="/index.html" class="nav-logo">
+                <img src="/assets/logos/Logo transparentev2.png" alt="logo">
+            </a>
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="/index.html#inicio"><i class="fa-solid fa-house"></i>Inicio</a>
+                <a href="/index.html#destinos"><i class="fa-solid fa-earth-americas"></i>Destinos</a>
+                <a href="/index.html#guides-section"><i class="fa-solid fa-dollar-sign"></i>Precios</a>
+                <a href="/index.html#experiencias"><i class="fas fa-star"></i>¿Por qué elegir Jouya tour?</a>
+                <a href="/index.html#contacto"><i class="fa-solid fa-phone"></i>Contáctanos</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="legal-container">
+        <div class="legal-header">
+            <h1><i class="fa-solid fa-cookie-bite"></i> Política de Cookies</h1>
+            <p>Última actualización: 12 de julio de 2025</p>
+        </div>
+
+        <div class="legal-content">
+            <div class="highlight-box">
+                <h4><i class="fa-solid fa-info-circle"></i> Información Importante</h4>
+                <p>Esta política explica cómo utilizamos las cookies y tecnologías similares en nuestro sitio web. Al continuar navegando, aceptas el uso de cookies según se describe en esta política.</p>
+            </div>
+
+            <h2>1. ¿Qué son las Cookies?</h2>
+            <p>Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas nuestro sitio web. Estas cookies nos permiten reconocer tu navegador y capturar y recordar cierta información para mejorar tu experiencia de navegación.</p>
+
+            <h2>2. Tipos de Cookies que Utilizamos</h2>
+            
+            <div class="cookie-type">
+                <h4><i class="fa-solid fa-cog"></i> Cookies Técnicas (Necesarias)</h4>
+                <p>Son esenciales para el funcionamiento del sitio web. Permiten la navegación y uso de diferentes funciones como acceder a áreas seguras del sitio.</p>
+            </div>
+
+            <div class="cookie-type">
+                <h4><i class="fa-solid fa-chart-line"></i> Cookies Analíticas</h4>
+                <p>Nos permiten analizar el comportamiento de los usuarios para mejorar nuestro sitio web. Recopilan información sobre cómo los visitantes utilizan el sitio.</p>
+            </div>
+
+            <div class="cookie-type">
+                <h4><i class="fa-solid fa-bullseye"></i> Cookies de Funcionalidad</h4>
+                <p>Permiten recordar las preferencias del usuario y personalizar la experiencia de navegación.</p>
+            </div>
+
+            <div class="cookie-type">
+                <h4><i class="fa-solid fa-ad"></i> Cookies de Marketing</h4>
+                <p>Se utilizan para rastrear visitantes a través de sitios web para mostrar anuncios relevantes y atractivos.</p>
+            </div>
+
+            <h2>3. Cookies Específicas que Utilizamos</h2>
+            <table class="cookie-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Propósito</th>
+                        <th>Duración</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>session_id</td>
+                        <td>Técnica</td>
+                        <td>Mantener la sesión del usuario</td>
+                        <td>Sesión</td>
+                    </tr>
+                    <tr>
+                        <td>user_preferences</td>
+                        <td>Funcionalidad</td>
+                        <td>Recordar preferencias del usuario</td>
+                        <td>1 año</td>
+                    </tr>
+                    <tr>
+                        <td>_ga</td>
+                        <td>Analítica</td>
+                        <td>Google Analytics - Distinguir usuarios</td>
+                        <td>2 años</td>
+                    </tr>
+                    <tr>
+                        <td>_gid</td>
+                        <td>Analítica</td>
+                        <td>Google Analytics - Distinguir usuarios</td>
+                        <td>24 horas</td>
+                    </tr>
+                    <tr>
+                        <td>facebook_pixel</td>
+                        <td>Marketing</td>
+                        <td>Seguimiento de conversiones</td>
+                        <td>90 días</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>4. Cookies de Terceros</h2>
+            <p>Nuestro sitio web utiliza cookies de terceros para mejorar la funcionalidad y analizar el tráfico:</p>
+            
+            <h3>4.1 Google Analytics</h3>
+            <p>Utilizamos Google Analytics para analizar el uso de nuestro sitio web. Google Analytics genera información estadística mediante cookies que se almacenan en tu ordenador.</p>
+            
+            <h3>4.2 Google Maps</h3>
+            <p>Para mostrar mapas interactivos de nuestros destinos turísticos, utilizamos Google Maps que puede instalar sus propias cookies.</p>
+            
+            <h3>4.3 Redes Sociales</h3>
+            <p>Los botones de redes sociales pueden instalar cookies para permitir el seguimiento de tu actividad en estas plataformas.</p>
+
+            <h2>5. Gestión de Cookies</h2>
+            <p>Puedes gestionar las cookies de las siguientes maneras:</p>
+            
+            <h3>5.1 Configuración del Navegador</h3>
+            <p>La mayoría de navegadores web permiten controlar las cookies a través de su configuración. Puedes:</p>
+            <ul>
+                <li>Ver qué cookies tienes y eliminarlas individualmente</li>
+                <li>Bloquear cookies de terceros</li>
+                <li>Bloquear todas las cookies</li>
+                <li>Eliminar todas las cookies al cerrar el navegador</li>
+            </ul>
+
+            <h3>5.2 Enlaces de Configuración por Navegador</h3>
+            <ul>
+                <li><strong>Chrome:</strong> Configuración > Privacidad y seguridad > Cookies</li>
+                <li><strong>Firefox:</strong> Opciones > Privacidad y seguridad > Cookies</li>
+                <li><strong>Safari:</strong> Preferencias > Privacidad > Cookies</li>
+                <li><strong>Edge:</strong> Configuración > Privacidad > Cookies</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h4><i class="fa-solid fa-exclamation-triangle"></i> Advertencia</h4>
+                <p>Si deshabilitas las cookies, es posible que algunas funciones del sitio web no funcionen correctamente y tu experiencia de navegación se vea afectada.</p>
+            </div>
+
+            <h2>6. Cookies en Dispositivos Móviles</h2>
+            <p>Si accedes a nuestro sitio web desde un dispositivo móvil, también puedes gestionar las cookies:</p>
+            <ul>
+                <li><strong>iOS (Safari):</strong> Configuración > Safari > Privacidad y seguridad</li>
+                <li><strong>Android (Chrome):</strong> Configuración > Privacidad > Cookies</li>
+            </ul>
+
+            <h2>7. Finalidad del Tratamiento</h2>
+            <p>Utilizamos las cookies para:</p>
+            <ul>
+                <li>Garantizar el funcionamiento técnico del sitio web</li>
+                <li>Mejorar la experiencia del usuario</li>
+                <li>Analizar el tráfico y comportamiento de los visitantes</li>
+                <li>Personalizar contenido y anuncios</li>
+                <li>Facilitar el uso de funciones de redes sociales</li>
+                <li>Recordar preferencias de idioma y configuración</li>
+            </ul>
+
+            <h2>8. Consentimiento</h2>
+            <p>Al continuar navegando en nuestro sitio web después de haber sido informado sobre el uso de cookies, consientes el uso de las mismas según se describe en esta política.</p>
+
+            <h2>9. Retención de Datos</h2>
+            <p>Las cookies se almacenan durante diferentes períodos según su tipo:</p>
+            <ul>
+                <li><strong>Cookies de sesión:</strong> Se eliminan cuando cierras el navegador</li>
+                <li><strong>Cookies persistentes:</strong> Permanecen durante el tiempo especificado en cada cookie</li>
+                <li><strong>Cookies de terceros:</strong> Se rigen por las políticas de privacidad de cada proveedor</li>
+            </ul>
+
+            <h2>10. Actualizaciones de la Política</h2>
+            <p>Esta política de cookies puede ser actualizada periódicamente. Te recomendamos revisar esta página regularmente para estar informado sobre cualquier cambio.</p>
+
+            <h2>11. Derechos del Usuario</h2>
+            <p>Tienes derecho a:</p>
+            <ul>
+                <li>Conocer qué cookies utilizamos y para qué</li>
+                <li>Retirar el consentimiento para el uso de cookies</li>
+                <li>Configurar tu navegador para rechazar cookies</li>
+                <li>Solicitar información sobre las cookies utilizadas</li>
+            </ul>
+
+            <h2>12. Contacto</h2>
+            <p>Si tienes preguntas sobre nuestra política de cookies, puedes contactarnos:</p>
+
+            <div class="contact-info">
+                <h3><i class="fa-solid fa-envelope"></i> Información de Contacto</h3>
+                <p><strong>Email:</strong> jouyatour@gmail.com</p>
+                <p><strong>Teléfono:</strong> 323-578-6491</p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.link/vznsop" target="_blank">323-578-6491</a></p>
+            </div>
+
+            <h2>13. Más Información</h2>
+            <p>Para obtener más información sobre cookies y cómo gestionarlas, puedes visitar:</p>
+            <ul>
+                <li><a href="https://www.allaboutcookies.org/es/" target="_blank">All About Cookies</a></li>
+                <li><a href="https://www.aepd.es/es/derechos-y-deberes/conoce-tus-derechos/cookies" target="_blank">Agencia Española de Protección de Datos</a></li>
+            </ul>
+
+            <a href="/index.html" class="back-link">
+                <i class="fa-solid fa-arrow-left"></i> Volver al Inicio
+            </a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div>
+            <div class="logofooter">
+                <a href="/index.html"><img src="/assets/logos/logo colorv2.jpg" alt="logo">Jouya tour</a>
+            </div>
+
+            <div class="social">
+                <h3>Siguenos en</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61569644880442" target="_blank"><i class="fa-brands fa-facebook-f"></i> @Jouya Tour</a></li>
+                    <li><a href="https://www.instagram.com/jouya_tour/" target="_blank"><i class="fa-brands fa-instagram"></i> @jouya_tour</a></li>
+                    <li><a href="https://www.tiktok.com/@jouyatour?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i> @jouyatour</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h3>Destinos Populares</h3>
+            <p>Sierra Mamey</p>
+            <p>City Tour Riohacha</p>
+            <p>Cabo de la Vela</p>
+        </div>
+        <div class="contacto" id="contacto">
+            <h3><i class="fa-solid fa-user"></i>Contacto</h3>
+            <ul>
+                <li><a href="https://wa.link/vznsop" target="_blank"><i class="fa-brands fa-whatsapp"></i> 323-578-6491</a></li>
+                <li><a href="" target="_blank"><i class="fa-solid fa-phone"></i> 323-578-6491</a></li>
+                <li><a><i class="fa-solid fa-envelope"></i> jouyatour@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="credits">
+        <!-- Créditos de desarrollo -->
+        <p class="By"><strong>Developed by</strong> | <a href="https://andrespushaina.com/" target="_blank">Arnaldo Pushaina</a></p>
+        
+        <!-- Derechos reservados -->
+        <p class="text">©2024 | Todos los derechos reservados</p>
+
+        <!-- Enlaces legales -->
+        <div class="legal-links">
+            <p class="text"><a href="/politocas.html"><i class="fa-solid fa-shield-alt"></i> Política de privacidad</a></p>
+            <p class="text"><a href="/terminos.html"><i class="fa-solid fa-file-contract"></i> Términos y condiciones</a></p>
+            <p class="text"><a href="/cookies.html"><i class="fa-solid fa-cookie-bite"></i> Política de cookies</a></p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Script para el menú hamburguesa
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('show');
+    });
+</script>
+
+</body>
+</html>

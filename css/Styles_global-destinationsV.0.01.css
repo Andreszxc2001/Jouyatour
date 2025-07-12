@@ -159,13 +159,58 @@ body {
     padding: 0px; /* Sin relleno interno */
 }
 
-/* Estilos del pie de página */
+/* Sección del footer */
 footer {
-    background-color: #1f2937; /* Fondo del pie de página */
-    padding: 3rem; /* Espaciado interno */
-    text-align: center; /* Alineación del texto */
+    background: var(--text); /* Fondo del footer usando la variable de color principal */
+    color: white; /* Color de texto blanco */
+    padding: 4rem 2rem; /* Espaciado interno de 4rem arriba y abajo, 2rem a los lados */
+    margin-top: 4rem; /* Margen superior para separar el footer del contenido previo */
 }
 
+/* Contenedor del contenido del footer */
+.footer-content {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra horizontalmente el contenido */
+    display: grid; /* Usa diseño de cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta las columnas según el ancho disponible */
+    gap: 2rem; /* Espaciado entre los elementos de la cuadrícula */
+}
+
+/* Responsividad para dispositivos con ancho menor a 768px */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Reduce el tamaño de la fuente del encabezado principal */
+    }
+
+    .nav-links {
+        display: none; /* Oculta los enlaces de navegación */
+    }
+}
+
+
+
+/* Estilo del logo en el footer */
+.logofooter a {
+    text-decoration: none; /* Sin subrayado en el texto */
+    font-size: 30px; /* Tamaño de fuente del texto del logo */
+    text-align: left; /* Alineación del texto a la izquierda */
+    color: #ffffff; /* Color blanco */
+    font-weight: bold; /* Fuente en negrita */
+}
+
+.logofooter img {
+    width: 40px; /* Ancho de la imagen del logo */
+    height: 38px; /* Altura de la imagen del logo */
+    float: left; /* Alinea la imagen a la izquierda */
+    padding: 0px; /* Sin relleno interno */
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: var(--bg-light); /* Fondo del pie de página */
+    padding: 2rem; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+}
 
 .footer-content {
     max-width: 1200px; /* Ancho máximo del contenedor */
@@ -173,7 +218,6 @@ footer {
     display: grid; /* Usa diseño de cuadrícula */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta las columnas según el ancho disponible */
     gap: 2rem; /* Espacio entre las columnas */
-    text-align: left;
 }
 
 .footer-content > div {
@@ -182,57 +226,241 @@ footer {
     border: 1px solid #dddddd23; /* Borde de las columnas */
     border-radius: 10px; /* Radio de las esquinas */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra de las columnas */
-
-}
-.footer-content h3{
-    color:#00bf63 ;
-}
-.footer-content p{
-    color: #ffffff; /* Color blanco */
 }
 
+/* Redes sociales */
 .social ul li {
     list-style: none; /* Elimina los estilos de lista predeterminados */
-    padding: 1px; /* Espaciado interno pequeño */
+    padding: 1px;
 }
 
 .social a {
-    text-decoration: none; /* Sin subrayado */
-    color: #fafafa; /* Color blanco claro */
-}
-
-.destinos p {
-    color: #ffffff; /* Color blanco */
+    text-decoration: none;
+    color: #fafafa;
 }
 
 /* Lista de contacto en el footer */
 .contacto ul li {
-    list-style: none; /* Elimina los estilos de lista predeterminados */
-    padding: 1px; /* Espaciado interno pequeño */
+    list-style: none;
+    padding: 1px;
 }
-.footer-content h3{
-    color:#00bf63 ;
-}
+
 .contacto a {
-    text-decoration: none; /* Sin subrayado */
-    color: #ffffff; /* Color blanco */
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Títulos del footer */
+.footer-content h3 {
+    color: #00bf63;
 }
 
 /* Créditos en el footer */
 .credits {
-    text-align: center; /* Centra el texto horizontalmente */
-    height: 0px; /* Altura fija en 0 */
+    background-color: #eeeeee10; /* Fondo sutil gris */
+    margin-top: 2rem;
+    padding: 1rem;
+    border-top: 1px solid #cccccc33;
+    border-radius: 10px;
+    text-align: center;
 }
-.credits strong {
+
+/* Texto dentro de créditos */
+.credits .By,
+.credits .text {
+    color: #cfcfcf;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Estilo del nombre del desarrollador */
+.credits .By a {
+    color: #00bf63;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.credits .By a:hover {
+    text-decoration: underline;
+}
+
+/* Enlaces legales */
+.legal-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.legal-links p {
+    margin: 0;
+    color: #a0a0a0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.legal-links a {
+    color: #00bf63;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.legal-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos responsive para el footer */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .logofooter {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logofooter img {
+        float: none;
+        display: block;
+        margin: 0 auto 0.5rem auto;
+    }
+
+    .logofooter a {
+        font-size: 1.5rem;
+        display: block;
+    }
+
+    .legal-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+/* Estilo del logo en el footer */
+.logofooter a {
+    text-decoration: none;
+    font-size: 30px;
+    text-align: left;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.logofooter img {
+    width: 40px;
+    height: 38px;
+    float: left;
+    padding: 0px;
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: var(--bg-light);
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-content > div {
+    background-color: #dddddd23;
+    padding: 1rem;
+    border: 1px solid #dddddd23;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Redes sociales */
+.social ul li {
+    list-style: none;
+    padding: 1px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+/* Lista de contacto en el footer */
+.contacto ul li {
+    list-style: none;
+    padding: 1px;
+}
+
+.contacto a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Títulos del footer */
+.footer-content h3 {
     color: #00bf63;
 }
-/* Estilo del texto de créditos */
-.By, .text {
-    padding: 0px; /* Espaciado interno pequeño */
-    margin: 4px 0; /* Márgenes superior e inferior pequeños */
-    color: #fff9f9; /* Color de texto gris claro */
-    text-align: center; /* Centrado del texto */
-    font-size: 0.9em; /* Tamaño de fuente pequeño */
-    line-height: 1.2; /* Altura de línea ajustada */
-    margin:0;
+
+/* Créditos en el footer */
+.credits {
+    background-color: #eeeeee10;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-top: 1px solid #cccccc33;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Texto dentro de créditos */
+.credits .By,
+.credits .text {
+    color: #cfcfcf;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Estilo del nombre del desarrollador */
+.credits .By a {
+    color: #00bf63;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.credits .By a:hover {
+    text-decoration: underline;
+}
+
+/* Enlaces legales */
+.legal-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.legal-links p {
+    margin: 0;
+    color: #a0a0a0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.legal-links a {
+    color: #00bf63;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.legal-links a:hover {
+    text-decoration: underline;
 }
